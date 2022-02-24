@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>À la manière de</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Oleo+Script+Swash+Caps&family=Roboto+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,14 +20,16 @@
 
         <header id="header" role="banner">
             <nav class="nav nav--header" role="navigation">
-                <image src="images\logo-final.png" alt="Accueil (logo À la manière de)">
-                    <ul class="nav__list nav__list--subList">
-                        <li class="nav__listItem"><a class="nav__link nav__link--active"
-                                href="artistes.html">Accueil</a></li>
-                        <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
-                        <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
-                        <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À propos</a></li>
-                    </ul>
+                <a class="logo" href="index.html">
+                    <image src="images\logo-final.png" alt="Accueil (logo À la manière de)">
+                </a>
+                <ul class="nav__list nav__list--subList">
+                    <li class="nav__listItem"><a class="nav__link nav__link--active" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav__listItem"><a class="nav__link" href="blogue.html">Blogue</a></li>
+                    <li class="nav__listItem"><a class="nav__link" href="ressources.html">Ressources</a></li>
+                    <li class="nav__listItem"><a class="nav__link" href="a-propos.html">À propos</a></li>
+                </ul>
             </nav>
             <picture class="entete">
                 <source media="(max-width:600px)" srcset="images\photo-montage_600.jpg">
@@ -53,7 +60,7 @@
                 </p>
             </section>
             <div class="description">
-                <section>
+                <section class="desc_1">
                     <h2>Passionné d’illustration </h2>
                     <figure>
                         <image src="images\1-ballons_600.jpg"
@@ -73,11 +80,11 @@
                         superposant habilement photos et illustrations.
                     </p>
                 </section>
-                <section>
+                <section class="desc_2">
                     <h2>Expert en photomontage </h2>
                     <figure>
                         <image src="images\2-melodie_600.jpg" alt="Enfant pilotant un oiseau © Debroize, 2016 (2)">
-                            <figcaption>Enfant pilotant un oiseau<br>©Debroize, <time>2016</time>></figcaption>
+                            <figcaption>Enfant pilotant un oiseau<br>©Debroize, <time>2016</time></figcaption>
                     </figure>
 
                     <p>Progressivement Debroize se perfectionne sur les logiciels de retouche d’images et développe
@@ -95,7 +102,7 @@
                         maitrise du photomontage est primordiale.
                     </p>
                 </section>
-                <section>
+                <section class="desc_3">
                     <h2>Une inspiration pour les novices </h2>
                     <figure>
                         <image src="images\3-ours_600.jpg" alt="Jeune fille chevauchant un ours,  © Debroize, 2017">
@@ -145,11 +152,10 @@
         <footer id="footer" role="contentinfo">
             <nav class="nav nav--footer">
                 <ul class="nav__list">
-                    <li class="nav__listItem">Accueil</li>
-                    <li class="nav__listItem">Artistes</li>
-                    <li class="nav__listItem">Blogue</li>
-                    <li class="nav__listItem">Ressources</li>
-                    <li class="nav__listItem">À&nbsp; propos</li>
+                    <li class="nav__listItem"><a href="accueil.html" class="nav__link--footer"> Accueil</a></li>
+                    <li class="nav__listItem"><a href="blogue.html" class="nav__link--footer">Blogue</a></li>
+                    <li class="nav__listItem"><a href="ressources.html" class="nav__link--footer">Ressources</a></li>
+                    <li class="nav__listItem"><a href="apropos.html" class="nav__link--footer">À&nbsp; propos</a></li>
                 </ul>
             </nav>
             <section class="credits">
@@ -165,7 +171,8 @@
                             href="https://www.behance.net/gallery/44945511/Adobe-Creative-Cloud">https://www.behance.net/gallery/44945511/Adobe-Creative-Cloud</a>
                     </li>
                 </ol>
-
+            </section>
+            <section class="copyright">
                 <p class="copyright">
                     <small>Tous droits réservés, © Projet en Techniques d’intégration multimédia (timcsf.ca), Cégep de
                         Sainte-Foy</small>
