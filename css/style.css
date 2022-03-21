@@ -3,6 +3,7 @@
 
 
 /*original JustinCarrier */
+/* Ajouter une table des matières pour naviguer la css et faciliter la maintenance */
 section {
   display: block;
 }
@@ -97,9 +98,6 @@ section {
   list-style: none;
   justify-content: space-between;
   font-family: 'News Cycle', sans-serif;
-  ;
-
-
 }
 
 
@@ -173,7 +171,7 @@ h2 {
 }
 
 figure {
-  margin: 0px;
+  margin: 0;
 }
 
 figcaption {
